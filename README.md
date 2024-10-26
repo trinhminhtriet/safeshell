@@ -106,8 +106,6 @@ safeshell --init-shell | source
 
 ## 💡 Usage
 
-## Using
-
 ```sh
 $ safeshell --help
 
@@ -134,7 +132,7 @@ SUBCOMMANDS:
     stash      Stash history file
 ```
 
-## :eyes: Find Sensitive Commands
+### 👀 Find Sensitive Commands
 
 Sensitive data can be stored in your history file when export a token of something or running a script with token.
 
@@ -144,25 +142,25 @@ safeshell find --format table
 
 ![find](./media/find.png)
 
-## :broom: Mask findings:
+### 🪄 Mask findings:
 
 ```sh
 safeshell clear
 ```
 
-## :collision: Remove findings:
+### 🔥 Remove findings:
 
 ```sh
 safeshell clear --remove
 ```
 
-## :luggage: Backup shell history before clear
+### 💼 Backup shell history before clear
 
 ```sh
 safeshell clear --backup
 ```
 
-## :see_no_evil: Stash/Pop/Restore
+### 🙈 Stash/Pop/Restore
 
 You can stash your history shell by running the command:
 
@@ -182,7 +180,7 @@ You can also restore your history backup file by running the command:
 safeshell stash restore
 ```
 
-## :pencil2: External Configuration
+### 𓂃🖌 External Configuration
 
 Create custom configuration by running the command
 
@@ -195,7 +193,7 @@ Config command will create:
 1. Custom pattern template for adding a custom risky patterns
 2. Ignore file to allows you ignore specific pattern
 
-### Validate Config Files
+### 🛠️ Validate Config Files
 
 Validate syntax file
 
@@ -203,7 +201,7 @@ Validate syntax file
 safeshell config validate
 ```
 
-### Delete Config Folder
+### 🚮 Delete Config Folder
 
 Validate syntax file
 
@@ -211,7 +209,7 @@ Validate syntax file
 safeshell config delete
 ```
 
-### Ignores Pattern
+### ⏭ Ignore patterns
 
 Manage pattern ignores
 

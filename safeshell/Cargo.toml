@@ -1,13 +1,13 @@
 [package]
 name = "safeshell"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Triet Trinh <contact@trinhminhtriet.com>"]
 repository = "https://github.com/trinhminhtriet/safeshell"
 homepage = "https://trinhminhtriet.com"
 license = "MIT"
-readme = "README.md"
-keywords = ["shell", "bash", "command", "security", "history", "privacy", "terminal"]
+readme = "../README.md"
+keywords = ["shell", "command", "security", "history", "terminal"]
 categories = ["command-line-utilities"]
 description = "SafeShell: A security tool for shell history management, designed to detect, stash, and clear sensitive commands, ensuring safer terminal sessions."
 
