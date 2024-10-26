@@ -1,0 +1,3 @@
+- name: detect github_oauth_token gho_ prefix
+  test: gho_safeshell1safeshell2safeshell3safeshell
+  expected: gho_safeshell1safeshell2safeshell3she

@@ -1,0 +1,6 @@
+- name: detect GitHub App Token ghu prefix
+  test: ghu_safeshell123safeshell1111111111111
+  expected: ghu_safeshell123safeshell1111111111111
+- name: detect GitHub App Token ghs prefix
+  test: ghs_safeshell123safeshell1111111111111
+  expected: ghs_safeshell123safeshell1111111111111

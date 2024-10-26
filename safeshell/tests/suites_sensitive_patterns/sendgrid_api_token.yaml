@@ -1,0 +1,3 @@
+- name: detect SendGrid API Token
+  test: SG.safeshelldH0bSHADAAs2.9Shellclaer_SdadvcCFG33dsSDFDD1
+  expected: SG.safeshelldH0bSHADAAs2.9Shellclaer_SdadvcCFG33dsSDFDD

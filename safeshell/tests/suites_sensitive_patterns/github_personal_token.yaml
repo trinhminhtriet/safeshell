@@ -1,0 +1,3 @@
+- name: detect GitHub Personal Token
+  test: ghp_safeshell1safeshell2safeshell3safeshell
+  expected: ghp_safeshell1safeshell2safeshell3she

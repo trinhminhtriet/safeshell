@@ -1,0 +1,49 @@
+[package]
+name = "safeshell"
+version = "0.1.0"
+edition = "2021"
+authors = ["Triet Trinh <contact@trinhminhtriet.com>"]
+repository = "https://github.com/trinhminhtriet/safeshell"
+homepage = "https://trinhminhtriet.com"
+license = "MIT"
+readme = "README.md"
+keywords = ["shell", "bash", "command", "security", "history", "privacy", "terminal"]
+categories = ["command-line-utilities"]
+description = "SafeShell: A security tool for shell history management, designed to detect, stash, and clear sensitive commands, ensuring safer terminal sessions."
+
+[dependencies]
+clap = { version = "3", features = ["cargo"], optional = true }
+serde = "1"
+serde_derive = "1"
+serde_yaml = "^0.8.24"
+serde_regex = "1.1.0"
+env_logger = "^0.9.0"
+log = "^0.4.17"
+anyhow = "1"
+console = "^0.15.0"
+rayon = "1.5"
+regex = "1"
+chrono = "0.4"
+strum = { version = "0.24", features = ["derive"] }
+prettytable-rs = "^0.8"
+requestty = "0.4.1"
+exitcode = "^1.1.2"
+dirs = "4.0"
+lazy_static = "1.4.0"
+mask-text = "0.1.2"
+
+[dev-dependencies]
+insta = { version = "1.17.2", features = ["backtrace", "filters"] }
+tempdir = "0.3"
+
+[build-dependencies]
+anyhow = "1"
+
+[features]
+default = ["cli"]
+# list optionals here:
+cli = ["clap"]
+
+[[bin]]
+name = "safeshell"
+required-features = ["cli"]
