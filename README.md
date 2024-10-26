@@ -12,7 +12,9 @@
 
 ## ✨ Features
 
-TBD
+🖥️ Display a summary of sensitive commands at the start of each terminal session.
+👀 Remove sensitive commands from the shell history to enhance security and privacy.
+👨‍💻 Temporarily store your command history prior to presentations or screen-sharing sessions for confidentiality.
 
 ## 🚀 Installation
 
