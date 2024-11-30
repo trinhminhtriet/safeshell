@@ -140,7 +140,7 @@ Sensitive data can be stored in your history file when export a token of somethi
 safeshell find --format table
 ```
 
-![find](./media/find.png)
+![find](./media/find.gif)
 
 ### 🪄 Mask findings:
 
