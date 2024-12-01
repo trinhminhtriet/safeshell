@@ -1,2 +1,5 @@
 [workspace]
 members = ["safeshell", "xtask"]
+
+[profile.release]
+lto = true
