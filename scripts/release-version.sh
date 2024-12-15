@@ -3,7 +3,7 @@ set -xe
 
 [ -z "$(git status --porcelain)" ] || (echo "dirty working directory" && exit 1)
 
-current_version="$(grep '^version = ' Cargo.toml | head -1 | cut -d '"' -f2)"
+current_version="$(grep '^version = ' safeshell/Cargo.toml | head -1 | cut -d '"' -f2)"
 new_version="$1"
 new_version_num="${new_version#"v"}"
 
@@ -13,13 +13,13 @@ if [ -z "$new_version" ]; then
 fi
 
 echo ">>> Bumping version"
-sed -i.bak "s/version = \"$current_version\"/version = \"$new_version_num\"/" Cargo.toml
-rm Cargo.toml.bak
+sed -i.bak "s/version = \"$current_version\"/version = \"$new_version_num\"/" safeshell/Cargo.toml
+rm safeshell/Cargo.toml.bak
 
 sleep 5
 
 echo ">>> Commit"
-git add Cargo.toml Cargo.lock
+git add safeshell/Cargo.toml Cargo.lock
 git commit -am "version $new_version"
 git tag $new_version
 
