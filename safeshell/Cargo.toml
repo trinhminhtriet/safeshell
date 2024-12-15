@@ -24,11 +24,11 @@ console = "^0.15.0"
 rayon = "1.5"
 regex = "1"
 chrono = "0.4"
-strum = { version = "0.24", features = ["derive"] }
+strum = { version = "0.26", features = ["derive"] }
 prettytable-rs = "^0.10"
 requestty = "0.4.1"
 exitcode = "^1.1.2"
-dirs = "4.0"
+dirs = "5.0"
 lazy_static = "1.4.0"
 mask-text = "0.1.2"
 

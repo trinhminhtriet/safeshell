@@ -1,5 +1,6 @@
 [workspace]
 members = ["safeshell", "xtask"]
+resolver = "2"
 
 [profile.release]
 lto = true
