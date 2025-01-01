@@ -12,7 +12,7 @@ categories = ["command-line-utilities"]
 description = "SafeShell: A security tool for shell history management, designed to detect, stash, and clear sensitive commands, ensuring safer terminal sessions."
 
 [dependencies]
-clap = { version = "3", features = ["cargo"], optional = true }
+clap = { version = "4", features = ["cargo"], optional = true }
 serde = "1"
 serde_derive = "1"
 serde_yaml = "^0.9.34"
